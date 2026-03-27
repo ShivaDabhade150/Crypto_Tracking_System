@@ -1,9 +1,13 @@
 
-import './App.css'
-import {LandingPage} from './LandingPage.jsx'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import {LandingPage} from './Pages/LandingPage.jsx'
 import {CoinList} from "./component/CoinList.jsx"
-import {Login} from "./Login.jsx" 
+import {Register} from "./Pages/Register.jsx"
+import {Login} from "./Pages/Login.jsx" 
 import { Routes, Route} from 'react-router-dom'
+import {Home} from "./Pages/Home.jsx"
 function App() {
 
   return (
@@ -11,8 +15,12 @@ function App() {
       <Routes>
         <Route  path="/" element={<LandingPage />} />
         <Route path="/user"  element={ <CoinList /> } />
-        <Route path="/login" element={ <Login />} />
+        <Route path="/register" element={ <Register />} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/home" element={<Home />} />
       </Routes>
+
+       <ToastContainer />
     </>
   )
 }

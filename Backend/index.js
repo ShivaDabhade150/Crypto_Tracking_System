@@ -1,23 +1,25 @@
 
+require('dotenv').config()
 const express = require('express')
 const cors  = require('cors')
 const app = express();
-const port = 5000
 
+const userRouters = require('./router/userRouters.js')
 
 // midleware 
-
 app.use(express.json())
 app.use(cors())
 
-app.get('/user',(req,res)=>{
-    res.send({
-        name:'shiva',
-        age:22,
-        div:'A'
-    })
-})
-app.listen(port,()=>{
 
-     console.log(`running on ${port}`)
+
+
+app.use('/user',userRouters)
+
+app.use('/user',userRouters)
+
+
+
+app.listen(process.env.PORT,()=>{
+
+     console.log(`running on ${process.env.PORT}`)
 })

@@ -1,8 +1,8 @@
 
 import logo from '/logo.png'
-import LandingPageVideo from "./assets/LandingPageVideo.mp4"
-import {LandingNavBar} from "./component/LandingNavBar.jsx"
-import App from "./App.jsx"
+import LandingPageVideo from "../assets/LandingPageVideo.mp4"
+import {LandingNavBar} from "../component/LandingNavBar.jsx"
+
 import {useNavigate} from "react-router-dom"
 export function LandingPage() {
     
@@ -10,7 +10,7 @@ export function LandingPage() {
 
         function handleLoginButton()
         {
-          navigate('/login')
+          navigate('/register')
         }
   
      
