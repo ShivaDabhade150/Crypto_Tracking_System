@@ -8,11 +8,16 @@ export function LandingPage() {
     
      const navigate = useNavigate()
 
-        function handleLoginButton()
+        function handleGetStartButton()
         {
           navigate('/register')
         }
   
+
+        function handleLoginButton()
+        {
+          navigate('/login')
+        }
      
   return <>
         <div className="flex-col w-full items-center justify-center">
@@ -37,8 +42,13 @@ export function LandingPage() {
                 <p className="relative font-extrabold text-[50px] text-white [text-shadow:0_0_10px_#3b82f6] top-0 ">Empowering you with real-time crypto intelligence.</p>
                 <p className="relative text-[20px] text-white   [text-shadow:0_0_10px_#3b82f6] top-0 ">Monitor live market trends, analyze price movements, and make smarter investment decisions with accurate crypto data.</p>
             
-                <button className=" relative font-bold text-[20px] w-40 h-10 text-white  bg-[#0B1E2E] top-0  rounded-[10px]  hover:w-41 hover:h-11 hover:shadow-[0_0_15px_#3b82f6] transition-all duration-300" onClick={()=>{handleLoginButton()}}>Get Start ⇨</button>
                 
+                <div className="flex gap-10">
+
+                 <button className=" relative font-bold text-[20px] w-45 h-11 text-white  bg-[#0B1E2E] top-0  rounded-[10px]  hover:w-46 hover:h-12 hover:shadow-[0_0_15px_#3b82f6] transition-all duration-300" onClick={()=>{handleGetStartButton()}}>Get Start ⇨</button>
+                 <button className=" relative font-bold text-[20px] w-45 h-11 text-white  bg-[#0B1E2E] top-0  rounded-[10px]  hover:w-46 hover:h-12 hover:shadow-[0_0_15px_#3b82f6] transition-all duration-300" onClick={()=>{handleLoginButton()}}>Log In ⇨</button>                
+         
+                </div>
                 </section>
 
 <footer className="bg-[#0B1E2E] text-white p-6">
