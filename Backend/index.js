@@ -19,6 +19,10 @@ app.use('/list',apiRouters)
 
 app.use('/api',apiRouters)
 
+app.use('/api',apiRouters)
+
+app.use('/api',apiRouters)
+
 app.listen(process.env.PORT, () => {
 
     console.log(`running on ${process.env.PORT}`)
