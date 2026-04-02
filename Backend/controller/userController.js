@@ -1,6 +1,5 @@
 
 const userModule = require('../model/createUser.js')
-
 const createUser = (req, res) => {
 
     const { userName, email, password } = req.body
@@ -44,6 +43,8 @@ const getUser = (req, res) => {
     })
 
 }
+
+
 
 
 module.exports = { createUser, getUser }

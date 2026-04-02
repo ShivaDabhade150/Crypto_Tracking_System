@@ -57,8 +57,8 @@ export const HomeNavBar = () => {
           </li>
 
           <li className="hover:text-gray-600 transition cursor-pointer">
-            Contact
-            
+            <Link to="/contact">Contact </Link>
+
           </li>
           <li className="hover:text-gray-600 transition cursor-pointer">
             
@@ -98,7 +98,7 @@ export const HomeNavBar = () => {
           
           <p className="hover:text-gray-600 cursor-pointer"><Link to="/search">Search </Link></p>
           <p className="hover:text-gray-600 cursor-pointer"><Link to="/new">News </Link></p>
-          <p className="hover:text-gray-600 cursor-pointer">Contact</p>
+          <p className="hover:text-gray-600 cursor-pointer"><Link to="/contact">Contact </Link></p>
 
           <button onClick={handleLogout} className="bg-black text-white px-4 py-1 rounded-lg" >
             Log Out

@@ -1,7 +1,7 @@
 import { HomeNavBar } from "../component/HomeNavBar.jsx";
+import { Footer } from '../component/Footer.jsx'
 import { coinListService } from "../services/coinListService.js";
 import { useState, useEffect } from "react";
-import { Footer } from '../component/Footer.jsx'
 
 export const Home = () => {
   const [coin, setCoin] = useState([]);
